@@ -32,10 +32,10 @@ const documentCategories = [
             {
                 name: "BSc Computer Science - KNUST",
                 description: "Bachelor of Science degree certificate from Kwame Nkrumah University of Science and Technology",
-                fileUrl: null,
+                fileUrl: "/documents/knust certificate.pdf",
                 fileSize: null,
                 lastUpdated: "2022",
-                comingSoon: true
+                comingSoon: false
             },
         ]
     },
@@ -49,10 +49,10 @@ const documentCategories = [
             {
                 name: "National Service Certificate",
                 description: "Certificate of completion from Bedeku Technical School",
-                fileUrl: null,
+                fileUrl: "/documents/national_service_certificate.pdf",
                 fileSize: null,
                 lastUpdated: "2023",
-                comingSoon: true
+                comingSoon: false
             },
             {
                 name: "Professional References",
