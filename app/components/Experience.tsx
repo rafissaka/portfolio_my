@@ -9,8 +9,8 @@ const timeline = [
         title: "ICT Technician",
         organization: "Godfirst Education and Tours Agency",
         location: "Ghana",
-        period: "2023 - Present",
-        duration: "Current",
+        period: "2023 - 2025",
+        duration: "2 Years",
         icon: Plane,
         color: "text-blue-500",
         bgColor: "bg-blue-500/10",
@@ -171,7 +171,7 @@ export function Experience() {
                                             <h4 className={`text-base lg:text-lg font-bold mb-2 ${item.color}`}>
                                                 {item.organization}
                                             </h4>
-                                            
+
                                             {/* Location & Period */}
                                             <div className="flex flex-wrap gap-3 mb-4 text-sm text-muted-foreground">
                                                 <div className="flex items-center gap-1">

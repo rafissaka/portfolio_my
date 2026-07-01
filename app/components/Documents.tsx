@@ -40,6 +40,23 @@ const documentCategories = [
         ]
     },
     {
+        title: "Certifications",
+        icon: Award,
+        color: "text-red-500",
+        bgColor: "bg-red-500/10",
+        borderColor: "border-red-500/20",
+        documents: [
+            {
+                name: "Google Cybersecurity Professional Certificate",
+                description: "Coursera certification covering network security, SIEM tools, incident response, threat detection, Python & SQL for security analysis",
+                fileUrl: "/documents/google-cybersecurity-certificate.pdf",
+                fileSize: null,
+                lastUpdated: "2026",
+                comingSoon: false
+            }
+        ]
+    },
+    {
         title: "Work Documents",
         icon: Briefcase,
         color: "text-orange-500",
@@ -176,7 +193,7 @@ export function Documents() {
                                                             <span className="px-2 py-0.5 bg-yellow-500/20 text-yellow-500 text-xs rounded-full border border-yellow-500/30">
                                                                 Coming Soon
                                                             </span>
-                                                        ) : doc.lastUpdated.includes("2025") ? (
+                                                        ) : ["2025", "2026"].includes(doc.lastUpdated) ? (
                                                             <span className="px-2 py-0.5 bg-green-500/20 text-green-500 text-xs rounded-full border border-green-500/30">
                                                                 Latest
                                                             </span>

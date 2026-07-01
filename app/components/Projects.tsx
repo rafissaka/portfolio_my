@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { ExternalLink, Github, Star, Building2, Globe, ShoppingCart, Truck, Languages, Home, Package, BookOpen, Sparkles, X, CheckCircle2, Layout, Database, Shield, Zap, GraduationCap } from "lucide-react";
+import { ExternalLink, Github, Star, Building2, Globe, ShoppingCart, Truck, Languages, Home, Package, BookOpen, Sparkles, X, CheckCircle2, Layout, Database, Shield, Zap, GraduationCap, Pill } from "lucide-react";
 import Image from "next/image";
 
 // Category definitions
@@ -12,9 +12,28 @@ const categories = [
     { id: "ecommerce", name: "E-Commerce", icon: "🛒" },
     { id: "logistics", name: "Logistics", icon: "📦" },
     { id: "entertainment", name: "Entertainment", icon: "🎮" },
+    { id: "healthcare", name: "Healthcare", icon: "💊" },
 ];
 
 const projects = [
+    {
+        title: "Pharmly - Pharmacy Marketplace",
+        description: "A digital marketplace connecting pharmacies with patients. Pharmacies list and manage their medicine catalogues while patients can browse, buy, or reserve medications online. A mobile app version is currently in development.",
+        tags: ["Next.js", "Supabase", "Firebase", "React.js", "Tailwind CSS"],
+        gradient: "from-emerald-500 via-green-500 to-teal-500",
+        icon: Pill,
+        image: "/projects/pharml.JPG",
+        category: "healthcare",
+        featured: true,
+        liveUrl: "https://pharmly.life/",
+        highlights: [
+            "Pharmacy-managed medicine catalogue listings",
+            "Patient browsing, purchase & reservation system",
+            "Real-time inventory sync with Supabase",
+            "Firebase-powered authentication & notifications",
+            "Mobile app version currently in development"
+        ]
+    },
     {
         title: "Logistics Construction Sales Platform",
         description: "A comprehensive multi-role logistics platform for construction materials with real-time tracking, order management, and push notifications. Features separate interfaces for customers, vendors, couriers, and administrators.",

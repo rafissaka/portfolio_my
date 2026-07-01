@@ -11,7 +11,8 @@ import {
     GitBranch,
     Boxes,
     Network,
-    Sparkles
+    Sparkles,
+    Shield
 } from "lucide-react";
 
 const skillCategories = [
@@ -30,6 +31,32 @@ const skillCategories = [
             { name: "Tailwind CSS", icon: "🎨", color: "#06B6D4" },
             { name: "HTML5 & CSS3", icon: "🌐", color: "#E34F26" },
             { name: "Redux", icon: "🔮", color: "#764ABC" }
+        ]
+    },
+    {
+        category: "Cybersecurity",
+        icon: Shield,
+        color: "text-red-500",
+        bg: "bg-red-500/10",
+        borderColor: "border-red-500/20",
+        certified: true,
+        certLabel: "Google Certified",
+        certUrl: "/documents/google-cybersecurity-certificate.pdf",
+        technologies: [
+            { name: "Google Cybersecurity Certificate", icon: "🎓", color: "#4285F4" },
+            { name: "Network Security", icon: "🔒", color: "#E74C3C" },
+            { name: "Threat Detection & Analysis", icon: "🕵️", color: "#C0392B" },
+            { name: "SIEM Tools (Splunk/Chronicle)", icon: "📊", color: "#FF6B35" },
+            { name: "Incident Response", icon: "🚨", color: "#D32F2F" },
+            { name: "Vulnerability Assessment", icon: "🔍", color: "#B71C1C" },
+            { name: "IDS/IPS", icon: "🛡️", color: "#8E44AD" },
+            { name: "Packet Analysis (Wireshark)", icon: "📡", color: "#2980B9" },
+            { name: "Linux Command Line", icon: "🐧", color: "#FCC624" },
+            { name: "Python for Security Automation", icon: "🐍", color: "#3776AB" },
+            { name: "SQL for Security Analysis", icon: "💾", color: "#4169E1" },
+            { name: "Cryptography", icon: "🔐", color: "#6A1B9A" },
+            { name: "Risk Management & Compliance", icon: "📋", color: "#00695C" },
+            { name: "Security Frameworks (NIST, CIS Controls)", icon: "📚", color: "#37474F" }
         ]
     },
     {
@@ -227,10 +254,23 @@ export function Skills() {
                                 <div className={`w-16 h-16 ${category.bg} rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300`}>
                                     <Icon className={`w-8 h-8 ${category.color}`} />
                                 </div>
-                                <div>
-                                    <h3 className="text-xl lg:text-2xl font-bold group-hover:text-primary transition-colors">
-                                        {category.category}
-                                    </h3>
+                                <div className="flex-1">
+                                    <div className="flex items-center gap-2 flex-wrap">
+                                        <h3 className="text-xl lg:text-2xl font-bold group-hover:text-primary transition-colors">
+                                            {category.category}
+                                        </h3>
+                                        {"certified" in category && category.certified && (
+                                            <a
+                                                href={category.certUrl}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className="px-2.5 py-1 rounded-full bg-green-500/15 border border-green-500/30 text-green-500 text-xs font-bold flex items-center gap-1 hover:bg-green-500/25 transition-colors"
+                                                title="View certificate"
+                                            >
+                                                ✅ {category.certLabel}
+                                            </a>
+                                        )}
+                                    </div>
                                     <p className="text-sm text-muted-foreground">
                                         {category.technologies.length} technologies
                                     </p>

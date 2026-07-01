@@ -2,7 +2,12 @@
   "permissions": {
     "allow": [
       "Bash(cd \"/mnt/c/Users/Rahina/Documents/main project/my_portfolio/my-portfolio\" && npx tsc --noEmit 2>&1 | head -40)",
-      "Bash(cd \"/mnt/c/Users/Rahina/Documents/main project/my_portfolio/my-portfolio\" && npx tsc --noEmit 2>&1)"
+      "Bash(cd \"/mnt/c/Users/Rahina/Documents/main project/my_portfolio/my-portfolio\" && npx tsc --noEmit 2>&1)",
+      "Bash(rtk tsc *)",
+      "Bash(npx tsc *)",
+      "Bash(npx next *)",
+      "Bash(ls node_modules/@next)",
+      "Bash(find / -maxdepth 6 -iname \"*next-swc*\")"
     ]
   }
 }
