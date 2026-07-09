@@ -15,7 +15,7 @@ const documentCategories = [
             {
                 name: "Professional CV",
                 description: "Comprehensive CV with work experience, education, and skills",
-                fileUrl: "/documents/lastest_cv.pdf",
+                fileUrl: "/documents/Raffat's_CV.pdf",
                 fileSize: null,
                 lastUpdated: "2025",
                 comingSoon: false

@@ -5,7 +5,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { Mail, Send } from "lucide-react";
 
-const WHATSAPP_NUMBER = "233248651340"; // international format, no +
+const WHATSAPP_NUMBER = "233248651346"; // international format, no +
 
 function WhatsAppIcon({ className }: { className?: string }) {
     return (
@@ -64,7 +64,7 @@ export function Contact() {
                                     rel="noopener noreferrer"
                                     className="font-semibold hover:text-green-500 transition-colors"
                                 >
-                                    +233 24 865 1340
+                                    +233 24 865 1346
                                 </a>
                             </div>
                         </div>
